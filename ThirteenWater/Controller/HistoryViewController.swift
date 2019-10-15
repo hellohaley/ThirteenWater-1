@@ -29,9 +29,16 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var hisPorker12: UIImageView!
     @IBOutlet weak var hisPorker13: UIImageView!
     
+    @IBOutlet weak var headLabel: UILabel!
+    @IBOutlet weak var look2Button: UIButton!
+    @IBOutlet weak var look3Button: UIButton!
+    @IBOutlet weak var look4Button: UIButton!
     @IBOutlet weak var hisTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        look2Button.isHidden = true
+        look3Button.isHidden = true
+        look4Button.isHidden = true
         hisTableView.delegate = self
         hisTableView.dataSource = self
         hisTableView.register(UINib(nibName: HistoryTableViewCell.identifer, bundle: nil), forCellReuseIdentifier: HistoryTableViewCell.identifer)
@@ -70,27 +77,62 @@ class HistoryViewController: UIViewController {
         self.dismiss(animated: false, completion: nil)
     }
     @IBAction func look2(_ sender: Any) {
-//        let firstCards = detailData[0].split(separator: " ")
-//        self.hisPorker1.image = UIImage(named: toImageName(str: String(firstCards[0])))
-//        self.hisPorker2.image = UIImage(named: toImageName(str: String(firstCards[1])))
-//        self.hisPorker3.image = UIImage(named: toImageName(str: String(firstCards[2])))
-//        let secondCards = hisDataArr[indexPath.row].card.second.split(separator: " ")
-//        self.hisPorker4.image = UIImage(named: toImageName(str: String(secondCards[0])))
-//        self.hisPorker5.image = UIImage(named: toImageName(str: String(secondCards[1])))
-//        self.hisPorker6.image = UIImage(named: toImageName(str: String(secondCards[2])))
-//        self.hisPorker7.image = UIImage(named: toImageName(str: String(secondCards[3])))
-//        self.hisPorker8.image = UIImage(named: toImageName(str: String(secondCards[4])))
-//        let thirdCards = hisDataArr[indexPath.row].card.third.split(separator: " ")
-//        self.hisPorker9.image = UIImage(named: toImageName(str: String(thirdCards[0])))
-//        self.hisPorker10.image = UIImage(named: toImageName(str: String(thirdCards[1])))
-//        self.hisPorker11.image = UIImage(named: toImageName(str: String(thirdCards[2])))
-//        self.hisPorker12.image = UIImage(named: toImageName(str: String(thirdCards[3])))
-//        self.hisPorker13.image = UIImage(named: toImageName(str: String(thirdCards[4])))
+        headLabel.text = "玩家2的出牌："
+        let firstCards = detailData[0].card.first.split(separator: " ")
+        self.hisPorker1.image = UIImage(named: toImageName(str: String(firstCards[0])))
+        self.hisPorker2.image = UIImage(named: toImageName(str: String(firstCards[1])))
+        self.hisPorker3.image = UIImage(named: toImageName(str: String(firstCards[2])))
+        let secondCards = detailData[0].card.second.split(separator: " ")
+        self.hisPorker4.image = UIImage(named: toImageName(str: String(secondCards[0])))
+        self.hisPorker5.image = UIImage(named: toImageName(str: String(secondCards[1])))
+        self.hisPorker6.image = UIImage(named: toImageName(str: String(secondCards[2])))
+        self.hisPorker7.image = UIImage(named: toImageName(str: String(secondCards[3])))
+        self.hisPorker8.image = UIImage(named: toImageName(str: String(secondCards[4])))
+        let thirdCards = detailData[0].card.third.split(separator: " ")
+        self.hisPorker9.image = UIImage(named: toImageName(str: String(thirdCards[0])))
+        self.hisPorker10.image = UIImage(named: toImageName(str: String(thirdCards[1])))
+        self.hisPorker11.image = UIImage(named: toImageName(str: String(thirdCards[2])))
+        self.hisPorker12.image = UIImage(named: toImageName(str: String(thirdCards[3])))
+        self.hisPorker13.image = UIImage(named: toImageName(str: String(thirdCards[4])))
         
     }
     @IBAction func look3(_ sender: Any) {
+        headLabel.text = "玩家3的出牌："
+        let firstCards = detailData[1].card.first.split(separator: " ")
+        self.hisPorker1.image = UIImage(named: toImageName(str: String(firstCards[0])))
+        self.hisPorker2.image = UIImage(named: toImageName(str: String(firstCards[1])))
+        self.hisPorker3.image = UIImage(named: toImageName(str: String(firstCards[2])))
+        let secondCards = detailData[1].card.second.split(separator: " ")
+        self.hisPorker4.image = UIImage(named: toImageName(str: String(secondCards[0])))
+        self.hisPorker5.image = UIImage(named: toImageName(str: String(secondCards[1])))
+        self.hisPorker6.image = UIImage(named: toImageName(str: String(secondCards[2])))
+        self.hisPorker7.image = UIImage(named: toImageName(str: String(secondCards[3])))
+        self.hisPorker8.image = UIImage(named: toImageName(str: String(secondCards[4])))
+        let thirdCards = detailData[1].card.third.split(separator: " ")
+        self.hisPorker9.image = UIImage(named: toImageName(str: String(thirdCards[0])))
+        self.hisPorker10.image = UIImage(named: toImageName(str: String(thirdCards[1])))
+        self.hisPorker11.image = UIImage(named: toImageName(str: String(thirdCards[2])))
+        self.hisPorker12.image = UIImage(named: toImageName(str: String(thirdCards[3])))
+        self.hisPorker13.image = UIImage(named: toImageName(str: String(thirdCards[4])))
     }
     @IBAction func look4(_ sender: Any) {
+        headLabel.text = "玩家4的出牌："
+        let firstCards = detailData[2].card.first.split(separator: " ")
+        self.hisPorker1.image = UIImage(named: toImageName(str: String(firstCards[0])))
+        self.hisPorker2.image = UIImage(named: toImageName(str: String(firstCards[1])))
+        self.hisPorker3.image = UIImage(named: toImageName(str: String(firstCards[2])))
+        let secondCards = detailData[2].card.second.split(separator: " ")
+        self.hisPorker4.image = UIImage(named: toImageName(str: String(secondCards[0])))
+        self.hisPorker5.image = UIImage(named: toImageName(str: String(secondCards[1])))
+        self.hisPorker6.image = UIImage(named: toImageName(str: String(secondCards[2])))
+        self.hisPorker7.image = UIImage(named: toImageName(str: String(secondCards[3])))
+        self.hisPorker8.image = UIImage(named: toImageName(str: String(secondCards[4])))
+        let thirdCards = detailData[2].card.third.split(separator: " ")
+        self.hisPorker9.image = UIImage(named: toImageName(str: String(thirdCards[0])))
+        self.hisPorker10.image = UIImage(named: toImageName(str: String(thirdCards[1])))
+        self.hisPorker11.image = UIImage(named: toImageName(str: String(thirdCards[2])))
+        self.hisPorker12.image = UIImage(named: toImageName(str: String(thirdCards[3])))
+        self.hisPorker13.image = UIImage(named: toImageName(str: String(thirdCards[4])))
     }
     /*
     // MARK: - Navigation
@@ -123,9 +165,10 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(hisDataArr[indexPath.row].card.first)
-        print(hisDataArr[indexPath.row].card.second)
-        print(hisDataArr[indexPath.row].card.third)
+        headLabel.text = "我的出牌："
+        look2Button.isHidden = false
+        look3Button.isHidden = false
+        look4Button.isHidden = false
         
         HubRequest.shared.detailRequest(id: hisDataArr[indexPath.row].id) { (detailData) in
             self.detailData = detailData

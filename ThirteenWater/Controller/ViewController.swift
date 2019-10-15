@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var toRankIcon: UIButton!
     
     @IBOutlet weak var exitButton: UIButton!
-    let NetWorkActivityIndicatorView = UIActivityIndicatorView.init(style:.whiteLarge)
+    let NetWorkActivityIndicatorView = UIActivityIndicatorView.init(style:.large)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,16 +104,16 @@ class ViewController: UIViewController {
     }
     func configureMenuView(){
         let kUIScreen = UIScreen.main.bounds
-        let creatRoomButton = UIButton(frame: .zero)
-        creatRoomButton.tag = 001
-        creatRoomButton.setImage(UIImage(named: "creatRoom"), for: .normal)
-        self.view.addSubview(creatRoomButton)
-        creatRoomButton.snp.makeConstraints {
+        let lookHistory = UIButton(frame: .zero)
+        lookHistory.tag = 001
+        lookHistory.setImage(UIImage(named: "record_zhanji"), for: .normal)
+        self.view.addSubview(lookHistory)
+        lookHistory.snp.makeConstraints {
             $0.centerX.equalTo(kUIScreen.width*(0.6))
             $0.centerY.equalTo(kUIScreen.height*(0.4))
-            $0.height.equalTo(70)
-            $0.width.equalTo(200)
-            creatRoomButton.addTarget(self, action: #selector(creatRoom), for: .touchUpInside)
+            $0.height.equalTo(30)
+            $0.width.equalTo(80)
+            lookHistory.addTarget(self, action: #selector(creatRoom), for: .touchUpInside)
         }
         
         let joinRoomButton = UIButton(frame: .zero)

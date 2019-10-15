@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryViewController" customModule="ThirteenWater" customModuleProvider="target">
             <connections>
+                <outlet property="headLabel" destination="aOK-hu-Xta" id="dXd-ph-aRY"/>
                 <outlet property="hisPorker1" destination="iNt-Zv-dgN" id="oMO-F9-nKt"/>
                 <outlet property="hisPorker10" destination="8VW-K7-CmK" id="Ny7-QW-ZLC"/>
                 <outlet property="hisPorker11" destination="AFi-D3-3DF" id="PBR-Q0-fIg"/>
@@ -23,6 +24,9 @@
                 <outlet property="hisPorker8" destination="RZU-mc-Xnc" id="Sej-Nh-0g6"/>
                 <outlet property="hisPorker9" destination="dyy-4i-Oph" id="08s-de-Uqe"/>
                 <outlet property="hisTableView" destination="ECS-qO-IEo" id="La2-b5-Lt4"/>
+                <outlet property="look2Button" destination="lrI-PV-FDR" id="Au0-6t-0jp"/>
+                <outlet property="look3Button" destination="79Q-ju-OiB" id="j7M-97-uV1"/>
+                <outlet property="look4Button" destination="fo3-Jb-kKl" id="RBm-qf-CFU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -80,7 +84,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的出牌：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOK-hu-Xta">
-                    <rect key="frame" x="562" y="138" width="87" height="21"/>
+                    <rect key="frame" x="562" y="138" width="247" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,7 +143,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79Q-ju-OiB">
-                    <rect key="frame" x="677" y="320" width="40" height="30"/>
+                    <rect key="frame" x="667" y="320" width="50" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="玩家3">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,7 +153,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo3-Jb-kKl">
-                    <rect key="frame" x="775" y="320" width="41" height="30"/>
+                    <rect key="frame" x="766" y="320" width="50" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="玩家4">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,7 +163,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrI-PV-FDR">
-                    <rect key="frame" x="574" y="320" width="40" height="30"/>
+                    <rect key="frame" x="567" y="320" width="52" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="玩家2">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -46,6 +46,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        containerView.layer.cornerRadius = 20
         containerView.isHidden = true
         // Do any additional setup after loading the view.
     }

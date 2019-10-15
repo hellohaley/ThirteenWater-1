@@ -21,7 +21,7 @@ class HubRequest:NSObject{
         let header:HTTPHeaders = ["Content-Type":"application/json"]
         Alamofire.request("https://api.shisanshui.rtxux.xyz/auth/login", method: .post, parameters: parms, encoding: JSONEncoding.default, headers: header).responseJSON { (response) in
             if response.result.isSuccess {
-//                            print(response)
+                            print(response)
                 if let jsons = response.result.value{
                 let jsonDict = JSON(jsons)
                 let jsonData = jsonDict["data"]
@@ -45,6 +45,7 @@ class HubRequest:NSObject{
         ]
         Alamofire.request("https://api.shisanshui.rtxux.xyz/game/open", method: .post, headers: header).responseJSON { (response) in
             if response.result.isSuccess{
+//                print(response)
                  if let jsons = response.result.value{
                                let jsonDict = JSON(jsons)
                                let jsonData = jsonDict["data"]
@@ -67,6 +68,7 @@ class HubRequest:NSObject{
         
         Alamofire.request("https://api.shisanshui.rtxux.xyz/rank", method: .get).responseJSON { (response) in
             if response.result.isSuccess{
+//                print(response)
                 if let jsons = response.result.value{
                     let jsonDict = JSON(jsons)
                     guard jsonDict.count > 10 else{
@@ -99,7 +101,7 @@ class HubRequest:NSObject{
         ]
         Alamofire.request("https://api.shisanshui.rtxux.xyz/history", method: .get, parameters: parms, headers: header).responseJSON { (response) in
             if response.result.isSuccess{
-                print(response)
+//                print(response)
                if let jsons = response.result.value{
                     let jsonDict = JSON(jsons)
                     let jsonData = jsonDict["data"]
@@ -133,6 +135,7 @@ class HubRequest:NSObject{
         ]
         Alamofire.request("https://api.shisanshui.rtxux.xyz/history/" + String(id), method: .get, parameters: nil, headers: header).responseJSON { (response) in
             if response.result.isSuccess{
+                print(response)
                 if let jsons = response.result.value{
                 let jsonDict = JSON(jsons)
                 let jsonDetail = jsonDict["data"]["detail"]
