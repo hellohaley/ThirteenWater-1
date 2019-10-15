@@ -16,8 +16,15 @@ class HisDataModel{
     
     
 }
+class DetailData {
+    var name = ""
+    var card = sortCards()
+    var score = 0
+}
 class sortCards{
     var first = ""
     var second = ""
     var third = ""
 }
+
+

@@ -14,7 +14,7 @@ class HistoryViewController: UIViewController {
     
     var page = 0
     var hisDataArr = [HisDataModel]()
-    
+    var detailData = [DetailData]()
     @IBOutlet weak var hisPorker1: UIImageView!
     @IBOutlet weak var hisPorker2: UIImageView!
     @IBOutlet weak var hisPorker3: UIImageView!
@@ -69,6 +69,29 @@ class HistoryViewController: UIViewController {
     @IBAction func exit(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
+    @IBAction func look2(_ sender: Any) {
+//        let firstCards = detailData[0].split(separator: " ")
+//        self.hisPorker1.image = UIImage(named: toImageName(str: String(firstCards[0])))
+//        self.hisPorker2.image = UIImage(named: toImageName(str: String(firstCards[1])))
+//        self.hisPorker3.image = UIImage(named: toImageName(str: String(firstCards[2])))
+//        let secondCards = hisDataArr[indexPath.row].card.second.split(separator: " ")
+//        self.hisPorker4.image = UIImage(named: toImageName(str: String(secondCards[0])))
+//        self.hisPorker5.image = UIImage(named: toImageName(str: String(secondCards[1])))
+//        self.hisPorker6.image = UIImage(named: toImageName(str: String(secondCards[2])))
+//        self.hisPorker7.image = UIImage(named: toImageName(str: String(secondCards[3])))
+//        self.hisPorker8.image = UIImage(named: toImageName(str: String(secondCards[4])))
+//        let thirdCards = hisDataArr[indexPath.row].card.third.split(separator: " ")
+//        self.hisPorker9.image = UIImage(named: toImageName(str: String(thirdCards[0])))
+//        self.hisPorker10.image = UIImage(named: toImageName(str: String(thirdCards[1])))
+//        self.hisPorker11.image = UIImage(named: toImageName(str: String(thirdCards[2])))
+//        self.hisPorker12.image = UIImage(named: toImageName(str: String(thirdCards[3])))
+//        self.hisPorker13.image = UIImage(named: toImageName(str: String(thirdCards[4])))
+        
+    }
+    @IBAction func look3(_ sender: Any) {
+    }
+    @IBAction func look4(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
@@ -103,6 +126,10 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource{
         print(hisDataArr[indexPath.row].card.first)
         print(hisDataArr[indexPath.row].card.second)
         print(hisDataArr[indexPath.row].card.third)
+        
+        HubRequest.shared.detailRequest(id: hisDataArr[indexPath.row].id) { (detailData) in
+            self.detailData = detailData
+        }
         
         let firstCards = hisDataArr[indexPath.row].card.first.split(separator: " ")
         self.hisPorker1.image = UIImage(named: toImageName(str: String(firstCards[0])))

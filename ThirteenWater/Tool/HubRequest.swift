@@ -126,5 +126,31 @@ class HubRequest:NSObject{
             }
         }
     }
+    func detailRequest(id:Int, _ completion: @escaping([DetailData]) -> ()){
+        var detailDataArr = [DetailData]()
+        let header = [
+            "X-Auth-Token":HubData.token
+        ]
+        Alamofire.request("https://api.shisanshui.rtxux.xyz/history/" + String(id), method: .get, parameters: nil, headers: header).responseJSON { (response) in
+            if response.result.isSuccess{
+                if let jsons = response.result.value{
+                let jsonDict = JSON(jsons)
+                let jsonDetail = jsonDict["data"]["detail"]
+                    for i in 0...jsonDetail.count-1{
+                        let detailData = DetailData()
+                        detailData.name = jsonDetail[i]["name"].stringValue
+                        detailData.score = jsonDetail[i]["score"].intValue
+                        detailData.card.first = jsonDetail[i]["card"][0].stringValue
+                        detailData.card.second = jsonDetail[i]["card"][1].stringValue
+                        detailData.card.third = jsonDetail[i]["card"][2].stringValue
+                        detailDataArr.append(detailData)
+                    }
+                    completion(detailDataArr)
+            }else{
+                print("战绩详情请求失败：\(response)")
+            }
+        }
+    }
 }
 
+}

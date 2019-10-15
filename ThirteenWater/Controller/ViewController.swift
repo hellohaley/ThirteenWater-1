@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import KVNProgress
 import SnapKit
 class ViewController: UIViewController {
 
@@ -20,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var toRankIcon: UIButton!
     
     @IBOutlet weak var exitButton: UIButton!
-    let NetWorkActivityIndicatorView = UIActivityIndicatorView.init(style:.large)
+    let NetWorkActivityIndicatorView = UIActivityIndicatorView.init(style:.whiteLarge)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +65,6 @@ class ViewController: UIViewController {
             self.configureMenuView()
             self.NetWorkActivityIndicatorView.stopAnimating()
         }
-        print("logining")
     }
     
     
