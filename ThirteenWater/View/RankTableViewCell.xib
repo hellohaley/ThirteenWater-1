@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="48" id="KGk-i7-Jjw" customClass="RankTableViewCell" customModule="ThirteenWater" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="historyBackgound" translatesAutoresizingMaskIntoConstraints="NO" id="8hm-L7-BId">
+                        <rect key="frame" x="0.0" y="3" width="485" height="42"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="Guz-K7-fNm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icv-ll-sEC">
+                        <rect key="frame" x="20" y="16" width="245" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="245" id="Ovv-jk-qIr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-Vi-UMs">
+                        <rect key="frame" x="273" y="16" width="166" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8hm-L7-BId" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Vp-fg-Dn2"/>
+                    <constraint firstItem="Icv-ll-sEC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Hcb-s7-pSB"/>
+                    <constraint firstAttribute="trailing" secondItem="tlN-Vi-UMs" secondAttribute="trailing" constant="46" id="Mxm-9N-6qJ"/>
+                    <constraint firstItem="tlN-Vi-UMs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="NB8-Z7-ZLq"/>
+                    <constraint firstAttribute="trailing" secondItem="8hm-L7-BId" secondAttribute="trailing" id="Sqs-xn-7h1"/>
+                    <constraint firstItem="Icv-ll-sEC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UFc-3S-Hrw"/>
+                    <constraint firstItem="tlN-Vi-UMs" firstAttribute="leading" secondItem="Icv-ll-sEC" secondAttribute="trailing" constant="8" id="f8e-Yd-piv"/>
+                    <constraint firstAttribute="bottom" secondItem="Icv-ll-sEC" secondAttribute="bottom" constant="11" id="fZJ-5g-CWz"/>
+                    <constraint firstAttribute="bottom" secondItem="8hm-L7-BId" secondAttribute="bottom" constant="3" id="hUZ-5u-oeg"/>
+                    <constraint firstAttribute="bottom" secondItem="tlN-Vi-UMs" secondAttribute="bottom" constant="11" id="onn-4Y-eQe"/>
+                    <constraint firstItem="8hm-L7-BId" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="vyS-iE-fJG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="Icv-ll-sEC" id="cTL-9z-zfL"/>
+                <outlet property="rankLabel" destination="tlN-Vi-UMs" id="P1Q-Xv-Jch"/>
+            </connections>
+            <point key="canvasLocation" x="251.44927536231887" y="125.22321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="historyBackgound" width="297" height="39"/>
+    </resources>
+</document>

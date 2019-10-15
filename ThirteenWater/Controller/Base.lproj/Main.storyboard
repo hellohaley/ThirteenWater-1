@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirteenWater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hallBlur" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-j5-Gox">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl" translatesAutoresizingMaskIntoConstraints="NO" id="Jt4-td-nPS">
+                                <rect key="frame" x="90" y="93" width="220" height="321"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="s7A-xF-e8o"/>
+                                    <constraint firstAttribute="height" constant="321" id="taS-By-H0J"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k" translatesAutoresizingMaskIntoConstraints="NO" id="Nnr-bz-0K0">
+                                <rect key="frame" x="40" y="20" width="207" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="JgR-Z0-Kd5"/>
+                                    <constraint firstAttribute="height" constant="120" id="tGb-9i-pgD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="十三水1" translatesAutoresizingMaskIntoConstraints="NO" id="IGR-QB-Pvu">
+                                <rect key="frame" x="275" y="46" width="346" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="17B-wQ-nfl"/>
+                                    <constraint firstAttribute="width" constant="346" id="f42-ep-Nfl"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WsX-Cl-3jl">
+                                <rect key="frame" x="346" y="209" width="204" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ka-xc-lO6">
+                                <rect key="frame" x="346" y="251" width="204" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIo-Yn-8BX">
+                                <rect key="frame" x="404" y="316" width="89" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="dx_sdk_dengl">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCM-U9-t0Y"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paijukaishi" translatesAutoresizingMaskIntoConstraints="NO" id="JSf-M5-4SK">
+                                <rect key="frame" x="695" y="26" width="160" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Q19-dA-lhw"/>
+                                    <constraint firstAttribute="width" constant="160" id="ZJS-h8-NWs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aM8-jX-nl0">
+                                <rect key="frame" x="770" y="356" width="85" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="5eH-lc-dBG"/>
+                                    <constraint firstAttribute="height" constant="37" id="NZK-mz-MpV"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="wanfa"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-H8-UaC">
+                                <rect key="frame" x="713" y="182" width="125" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rank"/>
+                                <connections>
+                                    <action selector="toRankView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZS-da-k9p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-EN-Qec">
+                                <rect key="frame" x="648" y="297" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="注销"/>
+                                <connections>
+                                    <action selector="exit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HA1-KX-Ray"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vIZ-j5-Gox" secondAttribute="trailing" id="1br-IK-PZS"/>
+                            <constraint firstItem="aM8-jX-nl0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="APo-e9-lvN"/>
+                            <constraint firstAttribute="trailing" secondItem="JSf-M5-4SK" secondAttribute="trailing" constant="41" id="CKT-pK-YOD"/>
+                            <constraint firstItem="Nnr-bz-0K0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hcp-gq-9EE"/>
+                            <constraint firstAttribute="trailing" secondItem="aM8-jX-nl0" secondAttribute="trailing" constant="41" id="Hf6-9H-0hY"/>
+                            <constraint firstItem="Jt4-td-nPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="KYQ-XT-90Z"/>
+                            <constraint firstItem="IGR-QB-Pvu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="NZf-5Z-yAy"/>
+                            <constraint firstItem="IGR-QB-Pvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDB-lg-rEG"/>
+                            <constraint firstItem="vIZ-j5-Gox" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XJY-vm-y7U"/>
+                            <constraint firstItem="JSf-M5-4SK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="ZbK-ID-ajt"/>
+                            <constraint firstItem="vIZ-j5-Gox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bYk-GB-pmx"/>
+                            <constraint firstAttribute="bottom" secondItem="Jt4-td-nPS" secondAttribute="bottom" id="djE-Hp-wOW"/>
+                            <constraint firstItem="Nnr-bz-0K0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="kTA-Ig-fV2"/>
+                            <constraint firstAttribute="bottom" secondItem="vIZ-j5-Gox" secondAttribute="bottom" id="q9q-Mb-wPF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="exitButton" destination="mHn-EN-Qec" id="jmh-Ie-nCH"/>
+                        <outlet property="loginButton" destination="nIo-Yn-8BX" id="OGA-jo-vB1"/>
+                        <outlet property="mainImageView" destination="IGR-QB-Pvu" id="AxZ-ki-vdg"/>
+                        <outlet property="passWord" destination="0Ka-xc-lO6" id="Ngo-xd-NKN"/>
+                        <outlet property="rightImageView" destination="JSf-M5-4SK" id="iGO-Nh-i5j"/>
+                        <outlet property="toRankIcon" destination="pXZ-H8-UaC" id="l0N-xZ-DHz"/>
+                        <outlet property="userText" destination="WsX-Cl-3jl" id="8fG-58-18l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dx_sdk_dengl" width="334" height="144"/>
+        <image name="girl" width="364" height="712"/>
+        <image name="hallBlur" width="1280" height="720"/>
+        <image name="k" width="993" height="546"/>
+        <image name="paijukaishi" width="443" height="376"/>
+        <image name="rank" width="125" height="50"/>
+        <image name="wanfa" width="288" height="131"/>
+        <image name="十三水1" width="1694" height="612"/>
+    </resources>
+</document>
