@@ -13,3 +13,4 @@
 * 建议用全面屏iPhone跑（部分没有屏幕适配
 * 没有设备想测试前端的同学可以联系我提供设备测试
 * 还有什么问题直接联系吧，ljsss真是一行代码都不想多撸了
+####  附：十三水iOS端真机录屏 https://pan.baidu.com/s/1cxejhS91haSj3CTRmxMkPA
